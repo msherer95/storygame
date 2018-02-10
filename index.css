@@ -1,0 +1,49 @@
+.container-fluid {
+    width: 100vw;
+    height: 100vh;
+    background-color: #FED35F;
+}
+
+.row {
+    width: 100vw;
+}
+
+.enter-name-row {
+    text-align: center;
+    height: 100px;
+    margin-top: calc(50vh - 100px);
+}
+
+.enter-name-row input {
+    font-weight:200;
+    font-family:Lato;
+    border: 1px solid #707070;
+    border-style: dotted;
+    color: #707070;
+    padding-top:30px;
+    padding-bottom:30px;
+    width:350px;
+    text-align:center;
+    font-size:30px;
+    background-color: #FED35F;
+}
+
+.enter-name-row input:focus {
+    outline:none;
+}
+
+.enter-name-row p {
+    margin-top:20px;
+    font-family:Lato;
+    font-weight:200;
+    font-size:16px;
+    transition: opacity 250ms;
+}
+
+#iam-p {
+    font-style: italic;
+}
+
+#press-enter-p {
+    opacity:0;
+}

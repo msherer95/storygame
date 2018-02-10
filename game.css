@@ -1,0 +1,29 @@
+#writer {
+    width: 60vw;
+    min-height: 200px;
+    height: auto;
+    background-color: #FED35F;
+    border: 1px dotted gray;
+    margin-left: 20vw;
+    font-family: Lato;
+    font-size: 20px;
+    line-height: 20px;
+    font-weight: 300;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-right: 10px;
+    padding-left: 15px;
+}
+
+#writer:focus {
+    outline: none;
+}
+
+#turn-header {
+    width: 100vw;
+    margin-top: calc(50vh - 200px);
+    text-align:center;
+    font-family: Lato;
+    margin-bottom:20px;
+    font-weight: 200;
+}
