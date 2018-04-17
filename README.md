@@ -1,4 +1,4 @@
-# [Story Game](realtime-story-game.herokuapp.com)
+# [Story Game](https://realtime-story-game.herokuapp.com)
 
 This was an exploratory app for me. That is, it was a interesting way to learn about some new tools that I've been wanting to play with: Redis and WebSockets. 
 
