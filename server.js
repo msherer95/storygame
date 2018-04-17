@@ -1,7 +1,7 @@
 var express = require('express');
 var app = express();
 var redis = require('redis'),
-    redisClient = redis.createClient(16379,'127.0.0.1');
+    redisClient = redis.createClient(22959,'ec2-34-226-156-118.compute-1.amazonaws.com');
 var http = require('http').createServer(app);
 var io = require('socket.io')(http);
 var sockets = require('./sockets.js');
@@ -11,7 +11,7 @@ var bodyParser = require('body-parser');
 
 app.use(session({
     secret: 'ssshhhhh',
-    store: new redisStore({ host: '127.0.0.1', port: 16379, client: redisClient, ttl:  260}),
+    store: new redisStore({ host: 'ec2-34-226-156-118.compute-1.amazonaws.com', port: 22959, client: redisClient, ttl:  260}),
     saveUninitialized: false,
     resave: false
 }));
