@@ -19,7 +19,8 @@ app.use(session({
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({extended: true}));
 
-http.listen(8080, function(){
+var port = process.env.PORT || 8000;
+http.listen(port, function(){
   console.log('listening on port 8080');
 });
 
