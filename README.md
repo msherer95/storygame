@@ -1,0 +1,11 @@
+# [Story Game](realtime-story-game.herokuapp.com)
+
+This was an exploratory app for me. That is, it was a interesting way to learn about some new tools that I've been wanting to play with: Redis and WebSockets. 
+
+The app itself is a basic realtime app where people take turns writing a story. Think back to grade school where you would pass a story around and everyone would add a sentence – this is the electronic version. At its core, its just an editable textbox whose content syncs across all users in realtime and forces users to take turns writing by giving and taking away typing priviledges. 
+
+Redis is exciting because I've never played with an in-memory database. I'm always excited by tools that are super fast, and wanted to get a general idea of how it works. The potential applications of Redis are super cool for improving UIs and app performance in general, so I used this app to better learn how Redis works. Admittedly, Redis is not actually needed here, and complicates the app unnecessarily. While this isn't a great practice, it was a great way for me to explore Redis.
+
+WebSockets, and specifically socket.io for NodeJS, have also been a tool that I've been super excited about. I mean, realtime communication? Super cool. And it's surprisingly simple, which makes it even more pleasant to work with. As with Redis, the potential applications of this for performance and improved UI are so interesting.
+
+Take form validation, for example. In React, we validate form input on the client each time the input changes. Using socket.io, we can send the input value to the server on every input change, and modulate server response based on whether or not the input is validated. Client validation is great, but it can easily be screwed with, so server validation is necessary. Realtime server validation makes "true" validation much smoother for the user, so they don't have to submit something, have it invalidated by the server, and sent back to the form. That sucks. Socket.io is a great way to avoid that. 
