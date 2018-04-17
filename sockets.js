@@ -1,7 +1,7 @@
 var express = require('express');
 var app = express();
 var redis = require('redis'),
-    redisClient = redis.createClient(22959, 'ec2-34-226-156-118.compute-1.amazonaws.com');
+    redisClient = redis.createClient(22959, 'ec2-34-226-156-118.compute-1.amazonaws.com', {password: 'p680c42a1f6e9905534bb182ca891193a779ad611f484677cf5f981540d2fbda2'});
 var http = require('http').createServer(app);
 var io = require('socket.io')(http);
 
