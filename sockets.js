@@ -57,7 +57,12 @@ var gameNamespace = function(socket) {
         socket.broadcast.emit('your-turn', sockets[msg].id);
         socket.emit('turn-count', msg);
         socket.broadcast.emit('turn-count', msg);
-    })
+	})
+	
+	socket.on('disconnect', function() {
+		var toBeRemoved = sockets.indexOf(socket);
+		sockets.splice(toBeRemoved, 1);
+	})
 
 }
 
